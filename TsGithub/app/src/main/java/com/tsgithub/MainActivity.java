@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final LoadingView loadingView = (LoadingView) findViewById(R.id.loadingView);
+		
+		loadingView.setLoadingText("加载中...");
 
         findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
             @Override
