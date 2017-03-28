@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tsgithub.MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:text="执行动画"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_stop"
+        android:text="停止动画"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--加载动画的使用
+        ShapeLoadingView为基本的
+        LoadingView 加载动画
+        ShapeLoadingDialog为以对话框形式显示的(不好看)-->
+    <com.mingle.widget.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
